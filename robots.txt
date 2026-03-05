@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+
+Sitemap: https://amazuluprimesolutions.netlify.app/sitemap.xml
