@@ -17,6 +17,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"/>
+  <link rel="manifest" href="images/favicon/site.webmanifest"/>
+
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Electrician","name":"AmaZulu Prime Solutions — Electrical Installations","url":"https://amazuluprimesolutions.netlify.app/electrical.html","telephone":"+27-71-364-7124","areaServed":["Durban","KwaZulu-Natal","Umbumbulu","Umlazi","Pinetown"]}
   </script>
@@ -24,12 +30,19 @@
 <body>
 <header class="nav" role="banner">
   <div class="container nav-inner">
-    <a href="index.html" class="nav-logo">AmaZulu <span>Prime</span> Solutions<small>Facilities Management &amp; Contractors</small></a>
+    <a href="index.html" class="nav-logo" aria-label="AmaZulu Prime Solutions Home">
+      <img src="images/logo.jpeg" alt="AmaZulu Prime Solutions logo" class="nav-logo-img" loading="eager"/>
+      <span class="nav-logo-text">
+        AmaZulu <span>Prime</span> Solutions
+        <small>Facilities Management &amp; Contractors</small>
+      </span>
+    </a>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="index.html#services">Services</a>
       <a href="index.html#about">About</a>
       <a href="index.html#reviews">Reviews</a>
+      <a href="faq.html">FAQs</a>
       <a href="index.html#contact" class="nav-cta">Get a Free Quote</a>
     </nav>
     <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
@@ -40,7 +53,10 @@
 <div class="overlay" id="nav-overlay"></div>
 <div class="mobile-menu" id="mobile-menu">
   <div class="mobile-menu-header">
-    <span class="mobile-menu-logo">AmaZulu <span>Prime</span></span>
+    <span class="mobile-menu-logo">
+      <img src="images/logo.jpeg" alt="AmaZulu Prime Solutions logo" class="mobile-logo-img" loading="lazy"/>
+      <span>AmaZulu <span>Prime</span></span>
+    </span>
     <button class="mobile-close" id="mobile-close" aria-label="Close menu">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
@@ -53,6 +69,7 @@
     <a href="renovation.html">🏗️ Renovation</a>
     <a href="index.html#about">👥 About Us</a>
     <a href="index.html#reviews">⭐ Reviews</a>
+    <a href="faq.html">❓ FAQs</a>
   </nav>
   <a href="index.html#contact" class="mobile-nav-cta">Get a Free Quote →</a>
 </div>
@@ -300,6 +317,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#about">About Us</a></li>
           <li><a href="index.html#reviews">Client Reviews</a></li>
+          <li><a href="faq.html">FAQs</a></li>
           <li><a href="index.html#contact">Contact Us</a></li>
         </ul>
       </div>
@@ -312,7 +330,7 @@
     </div>
     <div class="footer-bottom">
       <span>© <span id="current-year"></span> AmaZulu Prime Solutions Pty Ltd · Reg. 2018/717214/07</span>
-      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      <div class="footer-bottom-links"><a href="index.html">Home</a><a href="faq.html">FAQs</a><a href="index.html#contact">Contact</a></div>
     </div>
   </div>
 </footer>
