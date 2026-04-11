@@ -2,4 +2,29 @@ User-agent: *
 Allow: /
 Disallow: /thank-you.html
 
-Sitemap: https://amazuluprimesolutions.netlify.app/sitemap.xml
+# Explicit support for major search and AI crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://amazuluprimesolutions.co.za/sitemap.xml
